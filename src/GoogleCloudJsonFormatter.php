@@ -13,7 +13,7 @@ class GoogleCloudJsonFormatter extends JsonFormatter
     {
         return json_encode(
             $this->translateRecordForGoogleCloudLoggingFormat($record)
-        ) . ($this->appendNewline ? "\n" : '');
+        );
     }
 
     /**
